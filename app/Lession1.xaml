@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Lession1"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="Мой первый урок по английскому"
+                   FontSize="32"
+                   HorizontalOptions="Center"
+                   TextColor="Black" />
+
+            <Label Text="Выучите базовые фразы:"
+                   FontSize="24"
+                   Margin="0,20,0,10"
+                   TextColor="Black" />
+
+            <StackLayout Padding="10">
+                <Label Text="1. Hello - Здравствуйте"
+                       FontSize="20"
+                       TextColor="DarkGray" />
+
+                <Label Text="2. Thank you - Спасибо"
+                       FontSize="20"
+                       TextColor="DarkGray" />
+
+                <Label Text="3. Please - Пожалуйста"
+                       FontSize="20"
+                       TextColor="DarkGray" />
+
+                <Label Text="4. Yes - Да"
+                       FontSize="20"
+                       TextColor="DarkGray" />
+
+                <Label Text="5. No - Нет"
+                       FontSize="20"
+                       TextColor="DarkGray" />
+            </StackLayout>
+
+            <Button Text="Начать урок"
+                    FontSize="24"
+                    BackgroundColor="SkyBlue"
+                    TextColor="White"
+                    Clicked="OnStartLessonButtonClicked" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

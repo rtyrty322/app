@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.Lession1_Test"
+             Title="Lession1_Test">
+    <StackLayout Padding="20">
+
+        <Label Text="Тест по английскому языку" FontSize="24" HorizontalOptions="Center" />
+
+        <Label Text="1. What is the capital of France?" />
+        <RadioButton GroupName="question1" Content="a) London" Value="0" />
+        <RadioButton GroupName="question1" Content="b) Berlin" Value="0" />
+        <RadioButton GroupName="question1" Content="c) Paris" Value="1" />
+        <RadioButton GroupName="question1" Content="d) Madrid" Value="0" />
+
+        <Label Text="2. Which word is a synonym of 'happy'?" />
+        <RadioButton GroupName="question2" Content="a) Sad" Value="0" />
+        <RadioButton GroupName="question2" Content="b) Joyful" Value="1" />
+        <RadioButton GroupName="question2" Content="c) Angry" Value="0" />
+        <RadioButton GroupName="question2" Content="d) Tired" Value="0" />
+
+        <Label Text="3. What is the past tense of 'go'?" />
+        <RadioButton GroupName="question3" Content="a) goed" Value="0" />
+        <RadioButton GroupName="question3" Content="b) went" Value="1" />
+        <RadioButton GroupName="question3" Content="c) going" Value="0" />
+        <RadioButton GroupName="question3" Content="d) gone" Value="0" />
+
+        <Button Text="Проверить ответы" Clicked="OnCheckAnswersClicked" />
+        <Button Text="Вернуться назад" Clicked="ClickedGetBack"/>
+
+        <Label x:Name="ResultLabel" FontSize="20" HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage> 
+    

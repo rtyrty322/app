@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app.MainPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="10">
+
+            <Image
+                Source="pic1.png"
+                HeightRequest="185"
+                Aspect="AspectFit"/>
+
+            <Label Text="Приветик!!"
+                   FontSize="32"
+                    HorizontalOptions="Center"
+                    FontAttributes="Bold"
+                    TextColor="Black" />
+            <Label Text="Изучайте английский язык!!"
+                   FontSize="32"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   TextColor="Black" />
+
+            <Label Text="Выберите язык для изучения:"
+                   FontSize="20"
+                   HorizontalOptions="Start"
+                   TextColor="Black" />
+
+            <Picker x:Name="LanguagePicker"
+                    Title="Выберите язык"
+                    SelectedIndexChanged="OnPickerSelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Английский</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button Text="Начать урок"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="OnStartLessonClicked" />
+
+            <Label x:Name="LessonStatus"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   TextColor="Gray"
+                   IsVisible="False" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
